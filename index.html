@@ -1,0 +1,137 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blue Theme</title>
+    <!-- Compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script> -->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- <section class="firstSection"> -->
+    <!-- <div class="container content-placeholder">
+            <script id="expressions-template" type="text/x-handlebars-template">
+                    <h1>{{description.firstName}}</h1>
+                  
+                    <br><br>
+                  
+                   <h3> {{description.secondName}}</h3>
+            </script>
+        </div> -->
+
+
+    <!-- <div class="content-placeholder"></div> -->
+    <!-- <div class="container" style="height: 50%;"> -->
+    <!-- <img class="img-fluid sun" src="https://images.unsplash.com/photo-1541815039-f89df0622c00?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ebf1808f43d74684e5b6fe068edfd2ad&auto=format&fit=crop&w=1050&q=80"> -->
+
+    <!-- </div> -->
+
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-light fixed-top shadow-lg ">
+        <a class="navbar-brand font-italic font-weight-bold" href="#">S</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="firstSection">
+        <div class="text-center text-white container">
+            <h2 class=" display-4" >SAMEERUL</h2>
+            <hr class="style-two text-white">
+        </div>
+    </section>
+
+    <section class="secondSection">
+
+    </section>
+
+    <section class="thirdSection">
+
+    </section>
+
+    <footer class="fourthSection">
+
+    </footer>
+
+
+</body>
+<script>
+    AOS.init();
+</script>
+<script>
+    var sun = document.querySelector('.sun');
+    var $sun = $(".navbar-brand");
+    var $win = $(window);
+
+    $win.on("scroll", function () {
+        var top = $win.scrollTop() / 2;
+        $sun.css("transform", "rotate(" + top + "deg");
+    });
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 30) {
+                $('.navbar').css('padding', "0.5rem 1rem");
+            } else {
+                $('.navbar').css('padding', "1.5rem");
+            }
+        });
+    });
+</script>
+<!-- <script>
+    $(function () {
+        // Grab the template script
+        var theTemplateScript = $("#expressions-template").html();
+
+        // Compile the template
+        var theTemplate = Handlebars.compile(theTemplateScript);
+
+        // Define our data object
+        var context = {
+            "description": {
+                "firstName": "Sameerul",
+                "secondName": "hameed"
+            },
+            "button": "<button> Intro </button>"
+        };
+
+        // Pass our data to the template
+        var theCompiledHtml = theTemplate(context);
+
+        // Add the compiled html to the page
+        $('.content-placeholder').html(theCompiledHtml);
+    });
+</script> -->
+
+</html>
