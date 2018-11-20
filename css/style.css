@@ -34,13 +34,40 @@ hr.style-two {
     transform: translate(-50%, -50%);
 }
 .secondSection{
-    background-image: url("../img/bg-4.png");
+    /* background-image: url("../img/bg-4.png"); */
 	background-size: cover;
-	width: 100%;
+	width: 100%;    
 	background-repeat: no-repeat;
-	padding: 20% 0px;
+    padding: 0px 0 10px 0;
+    padding: 5% 0px
+}
+.crossDiv{
+    /* padding: 20px; */
+    background-color: #0072BC;
+    transform: skewY(-3deg);
+}
+.divInsideCrossDiv{
+    padding: 50px 20px 50px 20px;
+    /* color: inherit; */
+    transform: skewY(3deg);
 }
 
+.programmingHeader{
+    background-color: #0072BC;
+    transform: skewY(0deg);
+    color: white;
+    font-family: BrandonGrotesqueWeb-Bold,Verdana,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    font-size: 1.875rem;
+}
+.languageIconColour{
+    color: black;
+}
 .thirdSection{
     background-image: url("../img/bg-3.png");
     background-size: cover;
@@ -88,3 +115,6 @@ hr.style-two {
 	color: #fff;
 	margin-top: 15px;
 }
+
+
+

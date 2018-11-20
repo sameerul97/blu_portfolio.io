@@ -47,7 +47,7 @@
     <!-- </div> -->
 
     <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-light fixed-top shadow-lg ">
-        <a class="navbar-brand font-italic font-weight-bold" href="#">S</a>
+        <a class="navbar-brand font-italic font-weight-bold" href="#">Sameer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -76,59 +76,42 @@
         </div>
     </section>
 
-    <section class="secondSection">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center pt-2">
-                    <h3>Programing Language</h3>
-                    <div class=" ">
-                        <i class="fab fa-php fa-3x iconHoverAnimation"></i>
-                        <i class="fab fa-html5 fa-3x iconHoverAnimation"></i>
-                        <i class="fab fa-css3 fa-3x iconHoverAnimation"></i>
-                        <i class="fab fa-linux fa-3x iconHoverAnimation"></i>
-                        <i class="fab fa-js fa-3x iconHoverAnimation"></i>
-                        <span class="iconHoverAnimation">
-                            <i class="icon-mysql " style="font-size: 4rem"></i>
-                        </span>
-                        <i class="fab fa-php fa-3x iconHoverAnimation"></i>
-                        <i class="fab fa-html5 fa-3x iconHoverAnimation"></i>
-                        <i class="fab fa-css3 fa-3x iconHoverAnimation"></i>
-                        <i class="fab fa-linux fa-3x iconHoverAnimation"></i>
-                        <i class="fab fa-js fa-3x iconHoverAnimation"></i>
-                        <span class="iconHoverAnimation">
-                            <i class="icon-mysql " style="font-size: 4rem"></i>
-                        </span>
+    <section class="secondSection ">
+        <div class="crossDiv shadow-lg">
+            <div class="divInsideCrossDiv">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="programmingHeader">Programing Language</h3>
+                        <div class="languageIconColour">
+                            <i data-aos="zoom-in" class="fab fa-php fa-3x iconHoverAnimation"></i>
+                            <i data-aos="zoom-in" data-aos-delay="100" class="fab fa-html5 fa-3x iconHoverAnimation"></i>
+                            <i data-aos="zoom-in" data-aos-delay="200" class="fab fa-css3 fa-3x iconHoverAnimation"></i>
+                            <i data-aos="zoom-in" data-aos-delay="300" class="fab fa-linux fa-3x iconHoverAnimation"></i>
+                            <i data-aos="zoom-in" data-aos-delay="400" class="fab fa-js fa-3x iconHoverAnimation"></i>
+                            <span data-aos="zoom-in" data-aos-delay="500" class="iconHoverAnimation">
+                                <i class="icon-mysql " style="font-size: 4rem"></i>
+                            </span>
+                        </div>
                     </div>
-                    <!-- <div class="left-image col"> -->
-
+                    <!-- <div class="col-md-6 text-center">
+                        <h3 class="programmingHeader ">Programing Language</h3>
+                        <div class="languageIconColour">
+                            <i class="fab fa-php fa-3x iconHoverAnimation"></i>
+                            <i class="fab fa-html5 fa-3x iconHoverAnimation"></i>
+                            <i class="fab fa-css3 fa-3x iconHoverAnimation"></i>
+                            <i class="fab fa-linux fa-3x iconHoverAnimation"></i>
+                            <i class="fab fa-js fa-3x iconHoverAnimation"></i>
+                            <span class="iconHoverAnimation">
+                                <i class="icon-mysql " style="font-size: 4rem"></i>
+                            </span>
+                        </div>
+                    </div> -->
                 </div>
-                <!-- <div class="right-text col-sm-6">
-                    <h4><em>Integer suscipit</em><br>Nullam volutpat mi vel</h4>
-                    <p>Nulla tempor lectus at mauris bibendum porttitor. Aenean ultrices orci id nibh sodales, vel
-                        suscipit
-                        arcu vulputate. Pellentesque hendrerit diam quis leo dignissim, lacinia interdum nunc
-                        volutpat. Morbi
-                        lobortis mattis lectus, a dictum augue lobortis non. Fusce eu nulla sagittis, scelerisque
-                        eros fringilla,
-                        commodo dolor.</p>
-                </div> -->
             </div>
         </div>
-        </div>
-        <!-- <div class="container text-center p-3" style="width: 100vh;margin:0 auto;">
-            Programming languages:<br>
-            <div class="">
-                <i class="fab fa-php fa-5x iconHoverAnimation"></i>
-                <i class="fab fa-html5 fa-5x iconHoverAnimation"></i>
-                <i class="fab fa-css3 fa-5x iconHoverAnimation"></i>
-                <i class="fab fa-linux fa-5x iconHoverAnimation"></i>
-                <i class="fab fa-js fa-5x iconHoverAnimation"></i>
-                <span class="iconHoverAnimation">
-                    <i class="icon-mysql " style="font-size: 4rem"></i>
-                </span>
-            </div>
-        </div> -->
+
     </section>
+
 
     <section class="thirdSection">
 
@@ -149,15 +132,22 @@
     var $win = $(window);
 
     $win.on("scroll", function () {
-        var top = $win.scrollTop() / 3;
-        $sun.css("transform", "rotate(" + top + "deg");
+
     });
     $(document).ready(function () {
         $(window).scroll(function () {
             if ($(document).scrollTop() > 30) {
                 $('.navbar').css('padding', "0.5rem 1rem");
+                $('.navbar-brand').text("S");
+                var top = $win.scrollTop() / 3;
+                $sun.css("transform", "rotate(" + top + "deg");
+
             } else {
                 $('.navbar').css('padding', "1.5rem");
+                $('.navbar-brand').text("Sameer");
+                var top = $win.scrollTop() / 3;
+                $sun.css("transform", "rotateY(" + top + "deg");
+
             }
         });
     });
