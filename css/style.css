@@ -46,6 +46,7 @@ hr.style-two {
     background-color: #0072BC;
     transform: skewY(-3deg);
 }
+
 .divInsideCrossDiv{
     padding: 50px 20px 50px 20px;
     /* color: inherit; */
@@ -53,7 +54,6 @@ hr.style-two {
 }
 
 .programmingHeader{
-    background-color: #0072BC;
     transform: skewY(0deg);
     color: white;
     font-family: BrandonGrotesqueWeb-Bold,Verdana,Arial,sans-serif;
