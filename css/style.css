@@ -45,6 +45,8 @@ hr.style-two {
     /* padding: 20px; */
     background-color: #0072BC;
     transform: skewY(-3deg);
+    transform: rotateX() rotateY();
+
 }
 
 .divInsideCrossDiv{
@@ -119,3 +121,7 @@ hr.style-two {
 
 
 
+
+.dashColor2 {
+    background: linear-gradient(250deg, #86c07a, #59afe0) !important;
+}
