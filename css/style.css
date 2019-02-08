@@ -148,3 +148,8 @@ hr.style-two {
     width: 100px;
     color: white;
 }
+
+.shadow-sm:hover {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    transition: all 0.2s;
+}
